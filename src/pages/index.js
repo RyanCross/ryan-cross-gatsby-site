@@ -1,15 +1,13 @@
 import * as React from "react"
-import { Link } from 'gatsby'
+import Layout from "../components/layout"
 
 // markup
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1> Welcome to my freakin site </h1>
-      <p> I'm making this following the gatsby tutorial </p>
-      <Link to="/hireme">Hire Me</Link>
-    </main>
+    <Layout pageTitle="Ryan Cross">
+      <p>I'm making this by following the gatsby tutorial</p>
+      <p>This site is under construction, check back soon for an actual site!</p>
+    </Layout>
   )
 }
 
