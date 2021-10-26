@@ -12,10 +12,14 @@ Data Layer TODOs:
 1. Set each game jam social preview to desired gif image
 2. Parse the title of the game via now unified description format (substring stopping at |)
 
-1.  **Create a Gatsby site.**
+1.  **Build and Run**
+    `npm install`
+    `npm run develop`
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    a .env file is required to run this project, the `env-cmd` handles the parsing of the environment file to populate certain variables (like a Github Personal Access Token for querying my repo data)
+    If your interested in running this project for yourself, check out env.example for the expected file structure
 
+`
     ```shell
     # create a new Gatsby site using the minimal starter
     npm init gatsby
