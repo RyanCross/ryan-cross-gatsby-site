@@ -8,6 +8,9 @@
 </h1>
 
 ## 🚀 Quick start
+Data Layer TODOs:
+1. Set each game jam social preview to desired gif image
+2. Parse the title of the game via now unified description format (substring stopping at |)
 
 1.  **Create a Gatsby site.**
 
