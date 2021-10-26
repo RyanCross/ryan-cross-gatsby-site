@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.ryancross.dev",
-    title: "Ryan Cross Gatsby Site",
+    title: "Ryan Cross",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };
