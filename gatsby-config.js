@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-source-github-api`,
       options: {
-        token: "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",
+        token: process.env.GITHUB_ACCESS_TOKEN,
         graphQLQuery: `
         {
           search(type: REPOSITORY, query: "user:RyanCross topic:game-jam", last: 50) {
