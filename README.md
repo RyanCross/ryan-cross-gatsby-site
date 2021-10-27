@@ -9,25 +9,35 @@
 
 ## 🚀 Quick start
 Data Layer TODOs:
-1. Set each game jam social preview to desired gif image
-2. Parse the title of the game via now unified description format (substring stopping at |)
+* 
+* Set each game jam social preview to desired gif image
+* Parse the title of the game via now unified description format (substring stopping at |)
 
 1.  **Build and Run**
+    ### Setup
+    Environment Variables:
+    A `.env` file is required to build this project locally, the `env-cmd` handles the parsing of the environment file to populate certain variables; like a Github Personal Access Token for querying my repo data. Check out the `.env.example` for how to build one. 
+
+    GraphQl Queries:
+    If you've replaced your Github Personal Access Token with your own, you'll likely want to replace my username with your own. This should ensure some repository data is pulled down for the projects page. (assuming you have some pinned repositories!)
+
     `npm install`
     `npm run develop`
 
-    a .env file is required to run this project, the `env-cmd` handles the parsing of the environment file to populate certain variables (like a Github Personal Access Token for querying my repo data)
-    If your interested in running this project for yourself, check out env.example for the expected file structure
+    The site should now be running at http://localhost:8000
 
-`
     ```shell
     # create a new Gatsby site using the minimal starter
     npm init gatsby
     ```
 
-2.  **Start developing.**
+2.  **On GraphQL**
+    `source plugins` can be used to pull data into the data layer, sometimes using GraphQL queries to pull in that data.
+    GraphQL queries can be used to pull data into the data layer via `source` plugins,
+    In addition, you also use graphQL queries via page queries or useStaticQuery to pull data out of 
+    the data layer
 
-    Navigate into your new site’s directory and start it up.
+    GraphQL => DataLayer => GraphQl => React Components
 
     ```shell
     cd my-gatsby-site/
