@@ -12,7 +12,7 @@ module.exports = {
         token: process.env.GITHUB_ACCESS_TOKEN,
         graphQLQuery: `
         {
-          search(type: REPOSITORY, query: "user:$userName topic:$topicName", last: 50) {
+          search(type: REPOSITORY, query: "user:RyanCross topic:game-jam", last: 50) {
             repos: edges {
               repo: node {
                 ... on Repository {
@@ -24,7 +24,7 @@ module.exports = {
               }
             }
           }
-          user(login: "RyanCross") { 
+          user(login: "RyanCross") {
             pinnedItems(first: 10) {
               nodes {
                 ... on Repository {
@@ -47,8 +47,10 @@ module.exports = {
         }        
           `,
         variables: {
-          userName: "RyanCross",
-          topicName: "game-jam"
+          userFirst: 3,
+          searchFirst: 2,
+          q: "author:ldd is:merged state:closed type:pr sort:comments",
+          author: "ldd"
         }
       }
     }
