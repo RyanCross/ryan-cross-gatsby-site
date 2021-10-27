@@ -24,7 +24,7 @@ module.exports = {
               }
             }
           }
-          user(login: $userName) {
+          user(login: "RyanCross") { 
             pinnedItems(first: 10) {
               nodes {
                 ... on Repository {
