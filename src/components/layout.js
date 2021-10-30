@@ -2,9 +2,12 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import Navigation from './navigation'
+import Footer from './footer'
 
 const Layout = ({ pageTitle, children }) => {
-    const data = useStaticQuery(graphql`
+  document.body.classList.add('has-navbar-fixed-top');  
+  
+  const data = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -17,14 +20,14 @@ const Layout = ({ pageTitle, children }) => {
   `)
 
     return (
-        <div>
+        <>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             <Navigation></Navigation>
             <main>
-                <h1>{pageTitle}</h1>
                 {children}
             </main>
-        </div>
+            <Footer></Footer>
+        </>
     )
 }
 
