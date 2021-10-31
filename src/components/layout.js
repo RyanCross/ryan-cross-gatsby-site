@@ -3,9 +3,9 @@ import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import Navigation from './navigation'
 import Footer from './footer'
+import { Helmet } from 'react-helmet'
 
 const Layout = ({ pageTitle, children }) => {
-  document.body.classList.add('has-navbar-fixed-top');  
   
   const data = useStaticQuery(graphql`
     {
@@ -21,7 +21,10 @@ const Layout = ({ pageTitle, children }) => {
 
     return (
         <>
-            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
+            <Helmet>
+              <title>{pageTitle} | {data.site.siteMetadata.title}</title>
+              <body className="has-navbar-fixed-top"></body>
+            </Helmet>    
             <Navigation></Navigation>
             <main>
                 {children}

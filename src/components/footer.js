@@ -1,7 +1,7 @@
 import * as React from 'react'
 import '../styles/mystyles.scss'
 import { Link } from 'gatsby'
-
+//TODO replace class with classnamesg
 const Footer = () => {
 
     return (
