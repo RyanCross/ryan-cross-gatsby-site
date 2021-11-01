@@ -7,10 +7,13 @@ import me from "../images/me.jpg"
 const Introduction = () => {
   return (
     <content>
-              <figure className="image is-256x256">
-                <img className="is-rounded" src={me}></img>  
-              </figure>
-
+        <div className="columns is-centered is-mobile">
+          <div className="column is-narrow">
+            <figure className="image is-256x256">
+              <img className="is-rounded" src={me}></img>  
+            </figure>
+          </div>
+        </div>           
         <div className="block">
           <p>This site is under construction, check back soon for an overhaul!</p>
         </div>
@@ -55,7 +58,7 @@ const IndexPage = () => {
       <section>
         <div className="container is-fluid">
           <div className="columns is-centered">
-            <div className="column is-4">
+            <div className="column is-6">
               <p className="title is-1 has-text-centered">Welcome!</p>
               <Introduction></Introduction>
             </div>
