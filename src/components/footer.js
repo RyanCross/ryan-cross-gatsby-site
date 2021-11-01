@@ -1,12 +1,12 @@
 import * as React from 'react'
 import '../styles/mystyles.scss'
 import { Link } from 'gatsby'
-//TODO replace class with classnamesg
+
 const Footer = () => {
 
     return (
-        <footer class="footer">
-            <div class="content has-text-centered">
+        <footer className="footer">
+            <div className="content has-text-centered">
                 <p>
                 Built by Ryan Cross. Powered by <a href="https://www.gatsbyjs.com/">Gatsby </a>
                  and <a href="https://bulma.io/">Bulma</a>. 

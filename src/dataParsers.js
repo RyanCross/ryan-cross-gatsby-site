@@ -4,9 +4,10 @@
 export const parsePinnedRepositories = (data) => {
     let repos = [];
     let pinnedRepositories = {};
-    let pinnedItem = {};
 
     data.githubData.data.user.pinnedItems.nodes.forEach(element => {
+        let pinnedItem = {};
+
         pinnedItem.id = element.id;
         pinnedItem.name = element.name;
         pinnedItem.description = element.description;
