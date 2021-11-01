@@ -15,7 +15,7 @@ const Introduction = () => {
           </div>
         </div>           
         <div className="block">
-          <p>This site is under construction, check back soon for an overhaul!</p>
+          <p>This site is still under construction! Things may be buggy, look weird, or just be completely broken.</p>
         </div>
 
         <div className="block">
@@ -26,13 +26,13 @@ const Introduction = () => {
         </div>
         <div className="block">
           <p>
-            Outside of work, I enjoy building games. Particularly in the game jam setting. What's a game jam? Think Hackathon, but just for game devs. I find the theme restraints and artificial time pressure of game jams to be both a fun and exciting way to get the creative juices flowing.
+            Outside of work, I enjoy building games. Particularly in the game jam setting. I find the theme restraints and artificial time pressure of game jams to be both a fun and exciting way to get the creative juices flowing.
             You can find several of my jam games that I've hacked away at on my Jams page.
           </p>
         </div>
         <div className="block">
           <p>
-            Occasionally, I like to go outside. To travel, be in nature, or for just from some good ol' huu-man interaction; away from a screen.
+            Occasionally, I like to go outside. Mostly to travel or be in nature. Or more often to visit the local board game bar with friends for some good ol' huu-man interaction away from a screen.
           </p>
         </div>
     </content>
