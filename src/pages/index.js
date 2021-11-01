@@ -8,7 +8,7 @@ const Introduction = () => {
   return (
     <content>
         <div className="columns is-centered is-mobile">
-          <div className="column is-narrow">
+          <div className="column is-narrow is-centered">
             <figure className="image is-256x256">
               <img className="is-rounded" src={me}></img>  
             </figure>
