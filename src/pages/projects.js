@@ -1,18 +1,32 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
+import TileGrid from "../components/tilegrid"
 import { graphql } from "gatsby"
 import * as dataParsers from "../dataParsers"
 
 const Projects = ({ data }) => {
   const pinnedRepositories = dataParsers.parsePinnedRepositories(data);
-    
+
   return (
     <Layout pageTitle="Projects">
-      <p>Hello!</p>
-      <StaticImage src="../images/me.jpg" alt="A picture of Ryan Cross, smiling like a goof."></StaticImage> 
-      <p>This site is under construction, check back soon for an overhaul!</p>
-      <pre>{JSON.stringify(pinnedRepositories)}</pre>
+      <section class="hero is-primary">
+        <div class="hero-body has-text-centered">
+          <p class="title is-1">
+            Projects
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="columns">
+          <div class="column is-10 is-offset-1">
+            <TileGrid></TileGrid>
+          </div>
+        </div>
+      </section>
+  
+
+
     </Layout>
   )
 }

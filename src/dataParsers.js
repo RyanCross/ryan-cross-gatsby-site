@@ -11,7 +11,7 @@ export const parsePinnedRepositories = (data) => {
         pinnedItem.id = element.id;
         pinnedItem.name = element.name;
         pinnedItem.description = element.description;
-        pinnedItem.languages = element.languages;
+        pinnedItem.languages = element.languages.nodes;
         pinnedItem.watcherCount = element.watchers.totalCount;
 
         repos.push(pinnedItem);
