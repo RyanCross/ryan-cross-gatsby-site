@@ -12,7 +12,7 @@ const RepoTile = (props) => {
                 <div class="content">
                     <p>{props.description}</p>
                 </div>
-                <div class="is-flex is-justify-content-flex-end is-align-items-center"><CodingLanguage language="Javascript" color="#f57542"></CodingLanguage></div>
+                <div class="is-flex is-justify-content-flex-end is-align-items-center">{constructLanguages(props.languages)}</div>
             </article>
         </div>
     )
@@ -22,8 +22,18 @@ const RepoTile = (props) => {
  * Construct the CodingLanguage react elements
  * @param {*} languages 
  */
-const constructLanguages = (languages) => {
+const constructLanguages = (languageData) => {
+    let codingLanguages = [];
 
+    languageData.forEach(element => {
+        codingLanguages.push(
+            <CodingLanguage key={element.name} language={element.name} color={element.color}></CodingLanguage>
+        )
+    });
+
+    return codingLanguages;
 }
+
+
 
 export default RepoTile;
