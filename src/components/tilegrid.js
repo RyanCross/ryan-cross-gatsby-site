@@ -1,4 +1,5 @@
 import React from "react";
+import CodingLanguage  from "./codinglanguage";
 
 const TileGrid = () => {
     return (
@@ -28,7 +29,7 @@ const TileGrid = () => {
                         <div class="content">
                             <p>portfolio website - RyanCross.dev</p>
                         </div>
-                        <div class="is-flex is-justify-content-flex-end"><p>Languages: Javascript, React</p></div>
+                        <div class="is-flex is-justify-content-flex-end is-align-items-center"><CodingLanguage language="Javascript" color="#f57542"></CodingLanguage></div>
                     </article>
                 </div>
             </div>
