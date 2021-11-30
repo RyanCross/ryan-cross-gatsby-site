@@ -23,12 +23,12 @@ const TileGrid = () => {
                     </article>
                 </div>
                 <div class="tile is-parent">
-                    <article class="tile is-child box">
+                    <article class="tile is-child box is-flex is-flex-direction-column is-justify-content-space-between">
                         <p class="title">ryan-cross-gatsby-site</p>
                         <div class="content">
                             <p>portfolio website - RyanCross.dev</p>
                         </div>
-                        <p>Languages: Javascript, React</p>
+                        <div class="is-flex is-justify-content-flex-end"><p>Languages: Javascript, React</p></div>
                     </article>
                 </div>
             </div>
