@@ -1,6 +1,10 @@
 import * as React from "react"
 import "../styles/mystyles.scss"
 import { Link } from "gatsby"
+import { faAddressBook, faCircle } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 //TODO add js to get hamburger working, add github, linkedin, itch.io icons
 const Navigation = () => {
     return (
@@ -19,11 +23,11 @@ const Navigation = () => {
                 <div id="navbarRyan" className="navbar-menu">
                     <div className="navbar-start">
                         <Link className="navbar-item" to="/projects">Projects</Link>
-                        <Link className="navbar-item" to="/projects">Jams</Link>
-                        <Link className="navbar-item" to="/projects">Hire Me</Link>
+                        {/* <Link className="navbar-item" to="/projects">Jams</Link> */}
+                        {/* <Link className="navbar-item" to="/projects">Hire Me</Link> */}
                     </div>
                     <div className="navbar-end">
-                        <Link className="navbar-item" to="/projects">Github</Link>
+                        <Link className="navbar-item" to="https://github.com/RyanCross"><FontAwesomeIcon icon={faGithub} size="2x" color="#485fc7" /></Link>
                     </div>
                 </div>
             </div>

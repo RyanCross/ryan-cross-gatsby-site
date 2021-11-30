@@ -20,7 +20,7 @@ const Projects = ({ data }) => {
       <section>
         <div class="columns">
           <div class="column is-10 is-offset-1">
-            <TileGrid></TileGrid>
+            <TileGrid rowSize={3} pinnedRepositories={pinnedRepositories}></TileGrid>
           </div>
         </div>
       </section>
