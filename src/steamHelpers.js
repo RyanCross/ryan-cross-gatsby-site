@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export async function getGameInfoForPlayer(steamId) {
-  let url = `http://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=F7650FCCC5C05E79BF796FDFC6DC27A1&steamid=${steamId}&format=json`;
+  let url = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=F7650FCCC5C05E79BF796FDFC6DC27A1&steamid=${steamId}&format=json`;
 
   //76561197988224572
 
@@ -9,6 +9,8 @@ export async function getGameInfoForPlayer(steamId) {
   try {
     const requestConfig = {
         headers: {
+            // "Origin": 'http:127.0.0.1/8000',
+            // "Access-Control-Request-Method": "GET",
             "Access-Control-Allow-Origin": "*"
         }
     //   headers: {
