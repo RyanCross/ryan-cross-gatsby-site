@@ -23,6 +23,7 @@ const Navigation = () => {
                 <div id="navbarRyan" className="navbar-menu">
                     <div className="navbar-start">
                         <Link className="navbar-item" to="/projects">Projects</Link>
+                        <Link className="navbar-item" to="/preorders">Preorders</Link>
                         {/* <Link className="navbar-item" to="/projects">Jams</Link> */}
                         {/* <Link className="navbar-item" to="/projects">Hire Me</Link> */}
                     </div>

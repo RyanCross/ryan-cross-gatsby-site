@@ -20,11 +20,6 @@ const Introduction = () => {
 
       <div className="block">
         <p>
-        </p>
-      </div>
-
-      <div className="block">
-        <p>
           I'm Ryan, and I'm an engineer whose spent the last few years working in the Healthcare space. I've worked across a variety of tech stacks building robust APIs and web applications with the goal of improving patient care.
           Throughout all this, I've been fortunate to work with a team of extremely talented engineers from which I have learned a great deal.
         </p>
